@@ -2,14 +2,14 @@ from chatterbot import Chatbot
 from chatterbot.trainers import ListTrainer
 from tkinter import*
 
-bot=Chatbot("Natasha")
+bot=Chatbot("Newton")
 convo={
     "hiii"
     "hello..."
     "what is name??"
-    "My name is Natasha. I am made by RITIK SHARMA, KESHAV PRANSHUL, DIVYA RAUSHAN, KUMAR UTKARSH !!!"
+    "My name is Newton !!!"
     "Who are you ?"
-    "I am Natasha a Chat bot."
+    "I am Newton a Chat bot."
     "Which language do you speak?"
     "I gernally speak in english."
     "In which language are code in??"
@@ -25,7 +25,7 @@ trainer=train(convo)
 
 main=TK()
 main.geometry("500x600")
-main.title("My Chat BOT")
+main.title("Education ChatBOT")
 img=PhotoImage(file="bot1.pnj")
 Photol=Label(main,image=img)
 Photol.pack(pady=5)
@@ -35,7 +35,7 @@ def ask_from_bot():
     query=textF.get()
     answer=bot.get_response(query)
     msgs.insert(END,"You:"+query)
-    msgs.insert(END,"Natasha:"+str(answer))
+    msgs.insert(END,"Newton:"+str(answer))
     TestF.delete(0,END)
 
 frame=Frame(main)
@@ -46,6 +46,6 @@ msgs.pack(side=LEFT,fill=BOTH,pady=10)
 frame.pack()
 textF=Entry(main,font=("Lucida Sans",20))
 textF.pack(fill=x,pady=10)
-btn=Buttom(main,text="Ask From Natasha",font=("Lucida Sans",20),command=ask_from_bot)
+btn=Buttom(main,text="Ask From Newton",font=("Lucida Sans",20),command=ask_from_bot)
 btn.pack()
 main.mainloop()
