@@ -6,18 +6,18 @@ bot=Chatbot("Newton")
 convo={
     "hiii"
     "hello..."
-    "what is name??"
+    "what is your name??"
     "My name is Newton !!!"
     "Who are you ?"
     "I am Newton a Chat bot."
     "Which language do you speak?"
-    "I gernally speak in english."
+    "I genrally speak in english and what about you?."
     "In which language are code in??"
     "I am code in python."
     "Sorry !!!"
     "Thanku:)"
     "Where do you live?"
-    "I use to live in your device:)"
+    "I live in your device:)"
 
 }
 trainer=ListTrainer(bot)
